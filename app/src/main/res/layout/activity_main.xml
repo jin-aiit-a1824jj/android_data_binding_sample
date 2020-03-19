@@ -5,6 +5,10 @@
         <variable
             name="student"
             type="a1824jj.jp.ac.aiit.data_binding.Student" />
+        
+        <variable
+            name="clickHandler"
+            type="a1824jj.jp.ac.aiit.data_binding.MainActivity.MainActivityClickHandlers" />
 
     </data>
 
@@ -42,6 +46,36 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.203"
             />
+
+        <Button
+            android:id="@+id/button1"
+            android:text="Enroll"
+            android:onClick="@{clickHandler::onEnrollButtonClicked}"
+            android:textSize="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.603"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:text="Cancel"
+            android:onClick="@{clickHandler::onCancelButtonClicked}"
+            android:textSize="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.803"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
